@@ -6,11 +6,11 @@ public class FirstBinding : MonoBehaviour
 {
     public string parentFind = "Pommel";
 
-    private GameObject parent = GameObject.Find("Pommel");
+    public GameObject parent;
     // Start is called before the first frame update
     void Start()
     {
-
+        parent = GameObject.Find(parentFind);
     }
 
     // Update is called once per frame
