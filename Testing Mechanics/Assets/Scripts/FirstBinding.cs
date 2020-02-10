@@ -6,8 +6,11 @@ public class FirstBinding : MonoBehaviour
 {
     public string parentFind = "Pommel";
     public string KeyBind = "P";
-
+    public GameObject player;
     public GameObject parent;
+    public float pickupRange = 10;
+    public Rigidbody rigidbody;
+    public float dist;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,18 +21,24 @@ public class FirstBinding : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.P))
+        transform.position = gameObject.transform.parent.position;
+        transform.rotation = gameObject.transform.parent.rotation;
+        dist = Vector3.Distance(transform.position, player.transform.position);
+        if (Input.GetKeyDown(KeyCode.P) && dist < pickupRange)
         {
             if (transform.parent == null)
             {
+                //transform.rotation = gameObject.transform.parent.rotation;
                 transform.parent = parent.transform;
-                transform.position = gameObject.transform.parent.position;
+                //transform.position = gameObject.transform.parent.position;
+                rigidbody.useGravity = false;
 
-                transform.rotation = gameObject.transform.parent.rotation;
             }
             else if (transform.parent != null)
             {
                 transform.parent = null;
+                rigidbody.useGravity = true;
+
             }
         }
     }

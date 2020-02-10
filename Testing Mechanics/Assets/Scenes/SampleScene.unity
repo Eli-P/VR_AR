@@ -409,7 +409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751268442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.92, y: 180, z: 19.41}
+  m_LocalPosition: {x: 19.92, y: 116.1, z: 19.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2055949277}
@@ -1120,7 +1120,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentFind: Grip
   KeyBind: P
+  player: {fileID: 751268442}
   parent: {fileID: 0}
+  pickupRange: 10
+  rigidbody: {fileID: 0}
+  dist: 0
 --- !u!1 &852717908818212748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1515,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentFind: Pommel
   KeyBind: P
+  player: {fileID: 751268442}
   parent: {fileID: 0}
+  pickupRange: 10
+  rigidbody: {fileID: 0}
+  dist: 0
 --- !u!1 &3686049584723804280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1550,8 @@ GameObject:
   - component: {fileID: 3384837977789320727}
   - component: {fileID: 576994694672461971}
   - component: {fileID: 3849760424502742564}
+  - component: {fileID: 3849760424502742565}
+  - component: {fileID: 3849760424502742566}
   m_Layer: 0
   m_Name: Great Sword Blade
   m_TagString: Untagged
@@ -1563,7 +1573,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentFind: Blade
   KeyBind: P
+  player: {fileID: 751268442}
   parent: {fileID: 0}
+  pickupRange: 10
+  rigidbody: {fileID: 3849760424502742565}
+  dist: 0
+--- !u!54 &3849760424502742565
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849760424502742563}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &3849760424502742566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849760424502742563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 0.15000036}
+  m_Center: {x: 0.0000000013622834, y: 0.00000095280143, z: 0.049999967}
 --- !u!1 &4026282140657465224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1658,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentFind: Guard
   KeyBind: P
+  player: {fileID: 751268442}
   parent: {fileID: 0}
+  pickupRange: 10
+  rigidbody: {fileID: 0}
+  dist: 0
 --- !u!4 &4136017870682825926
 Transform:
   m_ObjectHideFlags: 0
@@ -1624,7 +1671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3849760424502742563}
   m_LocalRotation: {x: -0.6532815, y: -0.27059802, z: -0.27059808, w: 0.65328145}
-  m_LocalPosition: {x: -1.4522943, y: 1.2416158, z: -7.4617014}
+  m_LocalPosition: {x: 24.8, y: 119.82, z: 20.6}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
