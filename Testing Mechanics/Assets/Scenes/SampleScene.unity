@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 751268447}
   - component: {fileID: 751268448}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Player (Basic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -413,8 +413,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2055949277}
+  - {fileID: 1112770828}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &751268447
 Rigidbody:
@@ -447,7 +448,11 @@ MonoBehaviour:
   speed: 20
   turnSpeed: 50
   horizontalInput: 0
+  jumpInput: 0
   forwardInput: 0
+  rightInput: 0
+  rigidbody: {fileID: 751268447}
+  ground: 0
 --- !u!1 &796904025
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910053723
 GameObject:
@@ -593,14 +598,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112770827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.658312, z: -1.569791}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0.914999, y: 0, z: 0.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 370817497}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 751268446}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1129463546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Grip
+  KeyBind: P
   parent: {fileID: 0}
 --- !u!1 &852717908818212748
 GameObject:
@@ -1504,6 +1510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Pommel
+  KeyBind: P
   parent: {fileID: 0}
 --- !u!1 &3686049584723804280
 GameObject:
@@ -1555,6 +1562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Blade
+  KeyBind: P
   parent: {fileID: 0}
 --- !u!1 &4026282140657465224
 GameObject:
@@ -1606,6 +1614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Guard
+  KeyBind: P
   parent: {fileID: 0}
 --- !u!4 &4136017870682825926
 Transform:

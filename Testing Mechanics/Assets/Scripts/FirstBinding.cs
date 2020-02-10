@@ -5,6 +5,7 @@ using UnityEngine;
 public class FirstBinding : MonoBehaviour
 {
     public string parentFind = "Pommel";
+    public string KeyBind = "P";
 
     public GameObject parent;
     // Start is called before the first frame update
@@ -17,9 +18,19 @@ public class FirstBinding : MonoBehaviour
     void Update()
     {
 
-        transform.parent = parent.transform;
-        transform.position = gameObject.transform.parent.position;
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (transform.parent == null)
+            {
+                transform.parent = parent.transform;
+                transform.position = gameObject.transform.parent.position;
 
-        transform.rotation = gameObject.transform.parent.rotation;
+                transform.rotation = gameObject.transform.parent.rotation;
+            }
+            else if (transform.parent != null)
+            {
+                transform.parent = null;
+            }
+        }
     }
 }
