@@ -8,31 +8,33 @@ public class ChunkLayer : MonoBehaviour
     public GameObject[] blocks;
     private int rand;
     private int Chance;
-    public Vector3[] Blockpos;
+    public int[] x;
+    public int[] y;
+    private int j;
+    private int i =-7;
+    private float xf;
     // Start is called before the first frame update
     void Start()
     {
+
+
+        //for(j = 0; j<= 225; ++j)
+        //{
+        //    ++i;
+        //    if(i < 7)
+        //    {
+        //        i = -7;
+        //    }
+        //    y[j] = j-7;
+        //
+        //    x[i] = i;
+        //}
+        j = 0;
         
-        for(int i = 0; i <= 3; ++i)
-        {
-            rand = Random.Range(0, 3);
-            if (i == 0)
-            {
-                Instantiate(blocks[rand], transform.position + new Vector3(1,0,0), transform.rotation);
-            }
-            else if(i == 1)
-            {
-                Instantiate(blocks[rand], transform.position + new Vector3(-1, 0, 0), transform.rotation);
-            }
-            else if (i == 2)
-            {
-                Instantiate(blocks[rand], transform.position + new Vector3(0, 0, 1), transform.rotation);
-            }
-            else if (i == 3)
-            {
-                Instantiate(blocks[rand], transform.position + new Vector3(0, 0, -1), transform.rotation);
-            }
+        i = 0;
+        for(int i = 0; i <= 3; ++i) { 
             
+                Instantiate(blocks[rand], transform.position + new Vector3(1,0,0), transform.rotation);
             
         }
     }
