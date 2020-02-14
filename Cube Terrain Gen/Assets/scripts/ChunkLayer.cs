@@ -13,22 +13,20 @@ public class ChunkLayer : MonoBehaviour
     private int j;
     private int i =-7;
     private float xf;
+    private int xn;
+    private int xcheck;
     // Start is called before the first frame update
     void Start()
     {
 
-
-        //for(j = 0; j<= 225; ++j)
-        //{
-        //    ++i;
-        //    if(i < 7)
-        //    {
-        //        i = -7;
-        //    }
-        //    y[j] = j-7;
-        //
-        //    x[i] = i;
-        //}
+        for(i = 0; i < 225; ++i)
+        {
+            if (i / 15 == xcheck)
+            {
+                ++xcheck;
+            }
+            x[i] = xn;
+        }
         j = 0;
         
         i = 0;
