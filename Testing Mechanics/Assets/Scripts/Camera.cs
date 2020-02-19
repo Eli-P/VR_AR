@@ -21,6 +21,7 @@ public class Camera : MonoBehaviour
         forwardInput = Input.GetAxis("Mouse X");
         //transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * forwardInput);
         transform.Rotate(Vector3.right, Time.deltaTime * turnSpeed * horizontalInput * -1);
+        
 
     }
 }

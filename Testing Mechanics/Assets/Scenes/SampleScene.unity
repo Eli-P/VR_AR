@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8304207538325449413}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2.5239387, y: 2.9996526, z: -2.0256429}
+  m_LocalPosition: {x: 472, y: 59.4, z: 235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Grip
-  KeyBind: P
+  KeyBind: i
   player: {fileID: 751268442}
   parent: {fileID: 0}
   pickupRange: 10
@@ -1288,7 +1288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686904118179282840}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -4.456681, y: 2.9996529, z: -2.3011212}
+  m_LocalPosition: {x: 269, y: 0.6, z: 352.032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1305,6 +1305,7 @@ GameObject:
   - component: {fileID: 1624792187100611177}
   - component: {fileID: 5792646969238497293}
   - component: {fileID: 6065390117857790044}
+  - component: {fileID: 1686904118179282841}
   m_Layer: 0
   m_Name: pommel3
   m_TagString: Untagged
@@ -1312,6 +1313,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1686904118179282841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686904118179282840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd111094d5cf64dfe859a50b0cac61e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentFind: Pommel
+  KeyBind: u
+  player: {fileID: 751268442}
+  parent: {fileID: 0}
+  pickupRange: 10
+  dist: 0
 --- !u!4 &1934861774562210900
 Transform:
   m_ObjectHideFlags: 0
@@ -1414,7 +1433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3686049584723804280}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2.6635175, y: 2.9996529, z: -0.973649}
+  m_LocalPosition: {x: 425, y: 40, z: 352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1513,7 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Pommel
-  KeyBind: P
+  KeyBind: u
   player: {fileID: 751268442}
   parent: {fileID: 0}
   pickupRange: 10
@@ -1529,6 +1548,7 @@ GameObject:
   - component: {fileID: 3117279509055112343}
   - component: {fileID: 4963356508036221313}
   - component: {fileID: 3588817344052855320}
+  - component: {fileID: 3686049584723804281}
   m_Layer: 0
   m_Name: pommel5
   m_TagString: Untagged
@@ -1536,6 +1556,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3686049584723804281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3686049584723804280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd111094d5cf64dfe859a50b0cac61e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentFind: Pommel
+  KeyBind: u
+  player: {fileID: 751268442}
+  parent: {fileID: 0}
+  pickupRange: 10
+  dist: 0
 --- !u!1 &3849760424502742563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Blade
-  KeyBind: P
+  KeyBind: p
   player: {fileID: 751268442}
   parent: {fileID: 0}
   pickupRange: 10
@@ -1584,6 +1622,7 @@ GameObject:
   - component: {fileID: 8919388670698073120}
   - component: {fileID: 4197273789323654715}
   - component: {fileID: 9208635737749744534}
+  - component: {fileID: 4026282140657465225}
   m_Layer: 0
   m_Name: pommel4
   m_TagString: Untagged
@@ -1591,6 +1630,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4026282140657465225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4026282140657465224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd111094d5cf64dfe859a50b0cac61e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentFind: Pommel
+  KeyBind: u
+  player: {fileID: 751268442}
+  parent: {fileID: 0}
+  pickupRange: 10
+  dist: 0
 --- !u!1 &4036149826450216902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentFind: Guard
-  KeyBind: P
+  KeyBind: o
   player: {fileID: 751268442}
   parent: {fileID: 0}
   pickupRange: 10
@@ -2191,6 +2248,7 @@ GameObject:
   - component: {fileID: 562539157940848764}
   - component: {fileID: 5434320283640227761}
   - component: {fileID: 7142774672265404199}
+  - component: {fileID: 8304207538325449414}
   m_Layer: 0
   m_Name: pommel2
   m_TagString: Untagged
@@ -2198,6 +2256,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8304207538325449414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304207538325449413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd111094d5cf64dfe859a50b0cac61e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentFind: Pommel
+  KeyBind: u
+  player: {fileID: 751268442}
+  parent: {fileID: 0}
+  pickupRange: 10
+  dist: 0
 --- !u!4 &8539923108541557065
 Transform:
   m_ObjectHideFlags: 0
@@ -2267,7 +2343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4026282140657465224}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.4907167, y: 3.0496528, z: -1.0498266}
+  m_LocalPosition: {x: 650, y: 40.4, z: 322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

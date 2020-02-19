@@ -5,7 +5,7 @@ using UnityEngine;
 public class FirstBinding : MonoBehaviour
 {
     public string parentFind = "Pommel";
-    public string KeyBind = "P";
+    public string KeyBind = "";
     public GameObject player;
     public GameObject parent;
     public float pickupRange = 10;
@@ -22,7 +22,7 @@ public class FirstBinding : MonoBehaviour
     void Update()
     {
         dist = Vector3.Distance(transform.position, player.transform.position);
-        if (Input.GetKeyDown(KeyCode.P) && dist < pickupRange)
+        if (Input.GetKeyDown(KeyBind) && dist < pickupRange)
         {
             if (transform.parent == null)
             {
@@ -43,4 +43,9 @@ public class FirstBinding : MonoBehaviour
         transform.position = gameObject.transform.parent.position;
         transform.rotation = gameObject.transform.parent.rotation;
     }
+    //bool Key(string key)
+    //{
+        
+    //    return true;
+    //}
 }
