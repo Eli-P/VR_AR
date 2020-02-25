@@ -16,15 +16,15 @@ public class FoodItem : MonoBehaviour
             mr.material.color = Color.Lerp(mr.material.color, Color.black, cookRate * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.CompareTag("CookSurface"))
+        if(collision.gameObject.CompareTag("Cook"))
             isCooking = true;
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
-        if(collision.gameObject.CompareTag("CookSurface"))
+        if(collision.gameObject.CompareTag("Cook"))
             isCooking = false;
     }
 }

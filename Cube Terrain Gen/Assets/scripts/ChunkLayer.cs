@@ -25,14 +25,21 @@ public class ChunkLayer : MonoBehaviour
             {
                 ++xcheck;
             }
-            x[i] = xn;
+            xn = xcheck;
+            x[i] = xn-8;
+            if (j>14)
+            {
+                j = 0;
+            }
+            ++j;
+            y[i] = j-8;
         }
         j = 0;
         
         i = 0;
-        for(int i = 0; i <= 3; ++i) { 
+        for(i = 0; i <= 3; ++i) { 
             
-                Instantiate(blocks[rand], transform.position + new Vector3(1,0,0), transform.rotation);
+                Instantiate(blocks[1], transform.position + new Vector3(y[i],0,x[i]), transform.rotation);
             
         }
     }
