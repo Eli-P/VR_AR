@@ -977,8 +977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e86d76fd95cc84481dcb3b7676add7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mr: {fileID: 0}
-  cookRate: 0
+  mr: {fileID: 990486226}
+  cookRate: 0.1
 --- !u!114 &400803348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1454,8 +1454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e86d76fd95cc84481dcb3b7676add7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mr: {fileID: 0}
-  cookRate: 0
+  mr: {fileID: 970266720}
+  cookRate: 0.1
 --- !u!114 &940143351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1480,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!23 &970266720 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 39c432da1083de741b418997b1e5e0e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1456401480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &990486226 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: eecb8e7605474cd43bd27dedcc4d15aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1457436757}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1059302051
 PrefabInstance:
   m_ObjectHideFlags: 0
