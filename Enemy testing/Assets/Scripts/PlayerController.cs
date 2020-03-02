@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rigidbody;
     public int jump = 10;
     public bool ground;
+    public bool
     // Start is called before the first frame update
     void Start()
     {
